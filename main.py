@@ -12,7 +12,7 @@ def main():
     try:
         driver.get("https://www.ord.io/13058521")
 
-        for i in range(2):
+        for i in range(20):
             connect_button = driver.find_elements(By.TAG_NAME, 'button')[2]
             driver.execute_script("arguments[0].click();",connect_button)
             time.sleep(1)
