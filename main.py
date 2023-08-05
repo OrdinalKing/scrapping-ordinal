@@ -24,7 +24,7 @@ def main():
                 time.sleep(10)
                 first = 1
             else:
-                time.sleep(3)
+                time.sleep(2)
             favorite_button = driver.find_elements(By.TAG_NAME, 'button')[6]
             driver.execute_script("arguments[0].click();",favorite_button)
             time.sleep(1)
